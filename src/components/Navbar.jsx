@@ -1,11 +1,16 @@
-import React from 'react'
-import { navLinks } from '../constans'
+import React from "react";
+import { navLinks } from "../constans";
 
 const Navbar = () => {
     return (
         <header>
             <nav>
-                <img src="/logo.svg" alt="Apple logo" />
+                <img
+                    src="/logo/va.png
+                "
+                    alt="logo"
+                    className="logo"
+                />
                 <ul>
                     {navLinks.map(({ label }) => (
                         <li key={label}>
@@ -13,7 +18,6 @@ const Navbar = () => {
                         </li>
                     ))}
                 </ul>
-
 
                 <div className="flex-center gap-3">
                     <button>
@@ -23,9 +27,8 @@ const Navbar = () => {
                         <img src="/cart.svg" alt="Cart" />
                     </button>
                 </div>
-
             </nav>
         </header>
-    )
-}
-export default Navbar
+    );
+};
+export default Navbar;
